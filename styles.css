@@ -1,0 +1,66 @@
+/* Pagina Principal (Index.html) */
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: rgb(238, 238, 238);
+}
+ul {
+  display: flex;
+  padding: 50px 0px;
+  background-color: #bb0a1e;
+  justify-content: center;
+}
+
+ul li {
+  margin-right: 80px;
+}
+
+ul li:first-child {
+  margin-left: 80px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Pagina CFG (Index.html) */
+.containerCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  width: 40%;
+  height: 480px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  border: solid 2px #bb0a1e;
+  padding: 16px;
+}
+.cards * {
+  margin-top: 32px;
+}
+.cards a,
+h1 {
+  color: #bb0a1e;
+}
+.cards h1 {
+  font-size: 24px;
+  font-weight: bold;
+}

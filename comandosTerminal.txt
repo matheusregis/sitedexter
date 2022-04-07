@@ -1,0 +1,4 @@
+ls - Listagem das pastas conforme o diretório onde vc está!
+cd - Acesso as pastas de arquivos! (utiização de varias formas) (Utiliza dois pontos (..) para voltar, ou cd "diretorio" para avançar)
+mkdir - Criação de pastas!
+code . (Se eu tiver o vscode instalado, eu posso utilizar o code para abrir diretamente no repositorio o vscode)
