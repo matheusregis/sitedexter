@@ -67,3 +67,71 @@ h1 {
   font-size: 24px;
   font-weight: bold;
 }
+
+/* Login */
+
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.containerLogin form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+/* Criacao do sangue nas letras */
+/* .containerBlood {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6d0713;
+  width: 60px;
+  height: 100px;
+}
+.firstDrop {
+  background: #bb0a1e;
+  width: 20px;
+  height: 20px;
+
+  border-radius: 0% 60% 40% 60%;
+  transform: rotate(45deg);
+} */
+/* .firstDrop {
+  background: #bb0a1e;
+  width: 20px;
+  height: 20px;
+  border-radius: 10% 60% 40% 60%;
+  transform: rotate(45deg);
+} */
+/* .firstDrop {
+  background: #bb0a1e;
+  width: 5px;
+  height: 5px;
+  border-radius: 0% 80% 40% 80%;
+  transform: rotate(45deg);
+} */
+/* .secondDrop {
+  background: #bb0a1e;
+  width: 5px;
+  height: 4px;
+  border-radius: 0% 0% 90% 90%;
+}
+.thirdDrop {
+  background: #bb0a1e;
+  width: 10px;
+  height: 10px;
+  border-radius: 0% 70% 40% 70%;
+  transform: rotate(45deg);
+} */
