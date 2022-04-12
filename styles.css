@@ -7,21 +7,36 @@
   list-style-type: none;
   box-sizing: border-box;
 }
+:root {
+  --blood-color: #6d0713;
+  --blood-medium-color: #a00c1d;
+  --blood-light-color: #bb0a1e;
+  --light-gray-color: #dbd9d9;
+  --white-color: #fff;
+  --facebook-color: #1976d2;
+  --youtube-color: #ff0000;
+  --instagram-color: #ea4968;
+  --discord-color: #5c6bc0;
+  --twitch-color: #6441a5;
+}
+
 a {
   text-decoration: none;
 }
+
 body {
-  background-color: rgb(238, 238, 238);
+  background-color: var(--light-gray-color);
 }
-ul {
+/* Header */
+.header ul {
   display: flex;
   height: 150px;
-  background-color: #6d0713;
+  background-color: var(--blood-color);
   justify-content: space-between;
   align-items: center;
 }
 
-ul li {
+.header ul li {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,7 +45,7 @@ ul li {
   width: 100%;
 }
 
-ul li a {
+.header ul li a {
   display: flex;
   position: absolute;
   width: 100%;
@@ -39,13 +54,49 @@ ul li a {
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: var(--white-color);
 }
-ul li a:hover {
+.header ul li a:hover {
   filter: brightness(0.8);
   transition: filter 0.2s;
 }
-/* Pagina CFG (Index.html) */
+
+/* Home */
+
+.containerHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cardsHome {
+  display: flex;
+  width: 40%;
+  height: 480px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  border: solid 2px var(--blood-light-color);
+  padding: 16px;
+  cursor: pointer;
+}
+.cardsHome:first-child {
+  margin-right: 64px;
+}
+.cardsHome h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: var(--blood-medium-color);
+}
+.cardsHome p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--blood-light-color);
+}
+
+/* Cards.html */
 .containerCards {
   display: flex;
   flex-direction: column;
@@ -60,7 +111,7 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   margin-top: 150px;
-  border: solid 2px #bb0a1e;
+  border: solid 2px var(--blood-light-color);
   padding: 16px;
 }
 .cards * {
@@ -68,28 +119,11 @@ ul li a:hover {
 }
 .cards a,
 h1 {
-  color: #bb0a1e;
+  color: var(--blood-light-color);
 }
 .cards h1 {
   font-size: 24px;
   font-weight: bold;
-}
-
-/* Login */
-
-.containerLogin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 32px;
-}
-.containerLogin form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
 }
 
 /* Criacao do sangue nas letras */
@@ -100,7 +134,7 @@ h1 {
   margin-top: 40px;
 }
 
-ul li img {
+.header ul li img {
   display: none;
   position: relative;
 }
@@ -121,3 +155,95 @@ ul li img {
     opacity: 1;
   }
 }
+
+/* Redes Sociais (redesSociais.html) */
+
+.content p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--blood-light-color);
+}
+
+.redesSociais {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.redesSociais li {
+  margin-top: 16px;
+}
+
+.redesSociais li a {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.facebookAnchor {
+  color: var(--facebook-color);
+}
+
+.youtubeAnchor {
+  color: var(--youtube-color);
+}
+
+.twitchAnchor {
+  color: var(--twitch-color);
+}
+
+.instagramAnchor {
+  color: var(--instagram-color);
+}
+
+.discordAnchor {
+  color: var(--discord-color);
+}
+
+.redesSociais li:hover {
+  filter: brightness(0.7);
+  transition: filter 0.2s;
+}
+
+.redesSociais li img {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+/* PIX (pix.html) */
+
+.contentPix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentPix p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--blood-light-color);
+}
+
+.contentPix img {
+  display: flex;
+  width: 20%;
+  height: 20%;
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal */
