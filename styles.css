@@ -250,15 +250,79 @@ h1 {
 
 /* Caroussel */
 
-.containerCarousel {
+.video-slider {
+  width: 100%;
+  height: 30%;
+  background: #444;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
   width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.slide:first-child {
+  left: 0;
+}
+.slide:last-child {
+  left: -40px;
 }
 
-.carousel-inner img {
-  width: 200px;
-  height: 200px;
+.video {
+  margin-left: 30px;
+  height: 100%;
+  width: 30%;
+  border: 0;
+}
+.video:last-child {
+  margin-right: 30px;
+}
+.slide-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45%;
+  width: 15%;
+  cursor: pointer;
+  opacity: 0.7;
+  color: #fff;
+}
+.slide-arrow:hover {
+  opacity: 1;
+}
+.slide-arrow.left:after {
+  content: "\003c";
+  text-align: center;
+  display: block;
+  height: 10%;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 3em;
+}
+.slide-arrow.right:after {
+  content: "\003c";
+  text-align: center;
+  display: block;
+  height: 10%;
+  width: 181%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 3em;
+}
+.slide-arrow.right:after {
+  content: "\003e";
+}
+.slide-arrow.right {
+  left: auto;
+  right: 0;
 }

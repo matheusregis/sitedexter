@@ -12,11 +12,9 @@ $(document).ready(function () {
     $(".header ul li img").remove();
   });
   $(".videos").click(() => {
-    console.log("aq");
     $(".modalVideo").modal("show");
   });
   $(".clipes").click(() => {
-    console.log("aq");
     $(".modalClipes").modal("show");
   });
 });
