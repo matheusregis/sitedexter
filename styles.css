@@ -247,3 +247,18 @@ h1 {
 }
 
 /* Modal */
+
+/* Caroussel */
+
+.containerCarousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel-inner img {
+  width: 200px;
+  height: 200px;
+}
